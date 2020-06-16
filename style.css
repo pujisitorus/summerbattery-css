@@ -1,0 +1,51 @@
+body{
+	background-color: #e6dc4c;
+	padding: 0;
+	margin: 0;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+}
+
+.battery{
+	height: 200px;
+	width: 350px;
+	border: 10px solid #e64cca;
+	margin: auto;
+	border-radius: 15px;
+	position: relative;
+
+}
+
+.battery:before{
+	position: absolute;
+	content: " ";
+	height: 100px;
+	width: 30px;
+	background-color: #4ccae6;
+	top: 42px;
+	right: -40px;
+	border-radius: 0 5px 5px 0;
+}
+
+.battery:after{
+	position: absolute;
+	content: " ";
+	height: 180px;
+	width: 100px;
+	background-color: #4ccae6;
+	top: 10px;
+	left: 10px;
+	animation: charge 2s infinite linear;
+
+}
+
+@keyframes charge{
+	100%{
+		width: 300px;
+	}
+}
+
+
+
+
